@@ -108,22 +108,23 @@
       white-space: nowrap;
     }
     .top-email:hover { border-color: var(--ink); }
+    @media (max-width: 380px) {
+      .brand-club { font-size: 0.94rem; }
+      .top-email { font-size: 0.88rem; padding: 6px 11px; }
+    }
 
     /* ---------- Hero ---------- */
     .hero { padding: 40px 0 88px; }
     @media (min-width: 900px) { .hero { padding: 64px 0 120px; } }
-    .hello { font-weight: 600; color: var(--gold-ink); font-size: 1.1rem; }
     h1 {
-      margin-top: 10px;
       font-weight: 850;
       font-stretch: 92%;
       font-size: clamp(2.35rem, 8.4vw, 5.6rem);
       line-height: 0.98;
       letter-spacing: -0.02em;
-      max-width: 15ch;
       text-wrap: balance;
     }
-    @media (min-width: 900px) { h1 { font-stretch: 100%; max-width: 17ch; } }
+    @media (min-width: 900px) { h1 { font-stretch: 100%; } }
     .hero-grid { display: grid; gap: 36px; margin-top: 36px; }
     @media (min-width: 900px) {
       .hero-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 64px; align-items: center; margin-top: 48px; }
@@ -393,8 +394,7 @@
   <main>
     <section class="hero" id="top">
       <div class="wrap">
-        <p class="hello">Hey everyone, quick thing.</p>
-        <h1>We're starting an Entrepreneurship Club at Mayo.</h1>
+        <h1>Got a business idea?<br> <span class="nw">Bring it Thursday.</span></h1>
 
         <div class="hero-grid">
           <!-- Swap in real club photos by replacing these files in images/ (keep the same names). -->
